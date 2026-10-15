@@ -117,6 +117,3 @@ The training objective includes gradient and routing terms, so total loss is dis
 
 - Soft routing may blend or reuse patches; reconstruction MAE does not measure exact permutation recovery.
 - The training curves show a train/validation gap. Checkpoint selection does not eliminate overfitting.
-- No ablation study isolates the contribution of the Transformer, routing regularizers, edge loss, or U-Net.
-- Results concern this custom STL-10 holdout; performance on other image distributions has not been established.
-- Full reproduction requires the trained checkpoint and dataset. The original run did not retain a complete dependency lockfile or per-image evaluation errors.
