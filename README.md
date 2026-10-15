@@ -65,6 +65,16 @@ The evaluator computes one MAE per image, then reports the mean and population s
 
 The mean-patch baseline averages the nine patches, tiles the average into an 84 × 84 canvas, and resizes it to 96 × 96. Baseline and model evaluation reset the same NumPy seed and use the same non-shuffled test generator, so their sequential evaluation loops receive the same puzzles. Relative MAE reduction is calculated as `100 × (baseline MAE − model MAE) / baseline MAE`.
 
+
+## Qualitative Results
+
+Examples from the test set. Each row shows the shuffled input patches,
+the reconstructed image, and the ground-truth target.
+Reconstruction MAE is displayed for each example.
+
+![Reconstruction examples: shuffled input, model output, and ground truth](reconstruction_results.png)
+
+
 ## Run the notebook
 
 Open [`UNet_reconstruction.ipynb`](UNet_reconstruction.ipynb) in Google Colab. A GPU runtime is recommended for full test-set inference.
