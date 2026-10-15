@@ -91,7 +91,7 @@ If checkpoint loading fails, supply the existing trained checkpoint before conti
 
 ### Checkpoint
 
-The notebook contains the original [Google Drive checkpoint link](https://drive.google.com/file/d/1i44PssbOpJ6xczLpGgykk5GyxYXNWO8W/view) and supports downloading it with `gdown`.
+The notebook contains the original Google Drive checkpoint link and supports downloading it with `gdown`.
 
 Availability of that link and identity with the original best local checkpoint have not been independently verified during the notebook cleanup. No weights are embedded in the notebook.
 
