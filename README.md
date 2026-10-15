@@ -67,12 +67,6 @@ The mean-patch baseline averages the nine patches, tiles the average into an 84 
 
 These results were supplied from the updated notebook execution using existing trained weights; no retraining was required. The standalone baseline MAE was not included in the supplied output and is not reconstructed here from rounded percentages.
 
-### Historical training evidence
-
-The original training log records a best validation MAE of approximately **0.03839** at epoch **54**. Training curves retained in the notebook belong to that original run.
-
-The earlier test report of `0.03880 ± 0.00804` summarized batch-average errors. It is superseded by the per-image evaluation above. In particular, its batch-level standard deviation is not directly comparable with the corrected per-image standard deviation. The original baseline also aggregated cumulative metric values incorrectly; that calculation has been corrected.
-
 ## Run the notebook
 
 Open [`UNet_reconstruction.ipynb`](UNet_reconstruction.ipynb) in Google Colab. A GPU runtime is recommended for full test-set inference.
