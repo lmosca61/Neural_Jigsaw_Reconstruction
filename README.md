@@ -63,7 +63,7 @@ Results from the corrected inference-only evaluation, reported on **10,000 test 
 
 The evaluator computes one MAE per image, then reports the mean and population standard deviation across all test images. Every image receives equal weight, including those in the final partial batch. The standard deviation describes variation between images; it is not a confidence interval.
 
-The mean-patch baseline averages the nine patches, tiles the average into an 84 × 84 canvas, and resizes it to 96 × 96. Baseline and model evaluation reset the same NumPy seed and use the same non-shuffled test generator, so their sequential evaluation loops receive the same puzzles. Relative MAE reduction is calculated as `100 × (baseline MAE − model MAE) / baseline MAE`; it is not a patch-placement accuracy score.
+The mean-patch baseline averages the nine patches, tiles the average into an 84 × 84 canvas, and resizes it to 96 × 96. Baseline and model evaluation reset the same NumPy seed and use the same non-shuffled test generator, so their sequential evaluation loops receive the same puzzles. Relative MAE reduction is calculated as `100 × (baseline MAE − model MAE) / baseline MAE`.
 
 These results were supplied from the updated notebook execution using existing trained weights; no retraining was required. The standalone baseline MAE was not included in the supplied output and is not reconstructed here from rounded percentages.
 
